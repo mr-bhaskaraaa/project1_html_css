@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        nav{
+            background-color: rgba(255,255,255,0.7);
+            padding:20px;
+        }
+        .nav-item{
+            display: inline;
+            padding-left:20px;
+        }
+        .subnav{
+            position:absolute;
+            right:90px;
+            top:30px;
+        }
+        a{
+            font-size:25px;
+        }
+        .dropdown-menu{
+            position: absolute;
+            z-index:10;
+            left:190px;
+            background-color: rgba(255,255,255,0.7);
+            padding:10px;
+            display: none;
+        }
+        .drop-item{
+            list-style-type: none;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="/images/logo.png"  alt="" height="70" width="70">
+        <ul class="subnav">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="">Menu <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li class="drop-item"><a href="coffees.html">Cofees</a></li>
+                    <li class="drop-item"><a href="">Mochas</a></li>
+                    <li class="drop-item"><a href="">Moctails</a></li>
+                    <li class="drop-item"><a href="">Iced Teas</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+
+
+
+    </nav>
+    </nav>
+
+
+</body>
+</html>
